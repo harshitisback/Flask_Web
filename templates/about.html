@@ -26,15 +26,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/prediction">Prediction</a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/prediction">Prediction</a>
+              </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
@@ -50,7 +50,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" >Disabled</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -63,24 +63,7 @@
 
   <!-- nav bar ends here  -->
 
-  <div class="login">
-    <h1>Predict Crowd Density</h1>
-
-    <!-- Main Input For Receiving Query to our ML -->
-    <form action="/predict" method="post">
-      <input type="int" name="feature1" placeholder="Hour" required="required" />
-      <input type="text" name="feature2" placeholder="Day" required="required" />
-      <input type="text" name="feature3" placeholder="weather" required="required" />
-      <input type="text" name="feature4" placeholder="Zone" required="required" />
-
-      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
-
-    <br>
-    <br>
-    <p class="prediction">{{ prediction_text }}</p>
-
-  </div>
+ <h1>tapesh about</h1>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

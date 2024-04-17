@@ -20,8 +20,20 @@ with open('label.pkl', 'rb') as f:
 
 # Define a route for making predictions
 @app.route('/')
+def fun():
+    return render_template('home.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/prediction')
 def home():
     return render_template('index.html')
+
+# yaha pe sare edit 
+
+
 
 
 
