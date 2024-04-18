@@ -29,11 +29,9 @@ def about():
 
 @app.route('/prediction')
 def home():
-    return render_template('index.html')
+    return render_template('pred.html')
 
 # yaha pe sare edit 
-
-
 
 
 
@@ -54,7 +52,7 @@ def predict():
         prediction = model.predict(input_data)
         output = int(prediction[0])
         
-        return render_template('index.html', prediction_text='Expected Crowd Density Will be {}'.format(output))
+        return render_template('pred.html', prediction_text='Expected Crowd Density Will be {}'.format(output))
     except Exception as e:
         # If any error occurs, return an error message
         return jsonify({'error': str(e)}), 500
