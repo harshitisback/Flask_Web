@@ -31,6 +31,18 @@ def about():
 def home():
     return render_template('pred.html')
 
+@app.route('/team')
+def team():
+    return render_template('team.html')
+
+@app.route('/whyus')
+def why():
+    return render_template('why.html')
+
+@app.route('/services')
+def serve():
+    return render_template('service.html')
+
 # yaha pe sare edit 
 
 
