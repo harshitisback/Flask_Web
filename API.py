@@ -43,7 +43,9 @@ def why():
 def serve():
     return render_template('service.html')
 
-# yaha pe sare edit 
+@app.route('/sch')
+def sch():
+    return render_template('sched.html')
 
 
 

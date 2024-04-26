@@ -68,25 +68,26 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/about"> About</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/prediction">Prediction<span class="sr-only">(current)</span></a>
-                              </li>
-                              <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/prediction">Prediction<span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/services">Services</a>
-                              </li>
-                              <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/whyus">Why Us</a>
-                              </li>
-                              <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/team">Team</a>
-                              </li>
-                              <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/sch">Schedules</a>
                               </li>
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>-->
-<!--                            </li>-->
+                            <!--                            <li class="nav-item">-->
+                            <!--                                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>-->
+                            <!--                            </li>-->
                             <form class="form-inline">
                                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                                     <i class="fa fa-search" aria-hidden="true"></i>
@@ -112,7 +113,10 @@
                                             Trackr
                                         </h1>
                                         <p>
-                                            Discover the freedom to roam with confidence as CityTrackr guides you with precision and accuracy. Our advanced routing algorithms consider real-time traffic conditions, road closures, and alternative routes to ensure you reach your destination as efficiently as possible.
+                                            Discover the freedom to roam with confidence as CityTrackr guides you with
+                                            precision and accuracy. Our advanced routing algorithms consider real-time
+                                            traffic conditions, road closures, and alternative routes to ensure you
+                                            reach your destination as efficiently as possible.
                                         </p>
                                         <div class="btn-box">
                                             <a href="" class="btn1">
@@ -123,7 +127,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="img-box">
-                                        <img src="/static/images/img-robot.png" alt="">
+                                        <img src="/static/images/image-from-rawpixel-id-12119132-png.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +157,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="img-box">
-                                        <img src="/static/images/img-robot.png" alt="">
+                                        <img src="/static/images/image-from-rawpixel-id-12119132-png.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +187,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="img-box">
-                                        <img src="/static/images/img-robot.png" alt="">
+                                        <img src="/static/images/image-from-rawpixel-id-12119132-png.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -207,34 +211,29 @@
 
     <!-- End form  -->
 
-    <section class="secpred" style="height: 1000px;">
-        <div class="login">
-            <h1>Predict Crowd Density</h1>
+    <h1 class="schtb">schedules Of Train & Buses</h1>
 
-            <!-- Main Input For Receiving Query to our ML -->
-            <form action="/predict" method="post">
-                <input type="int" name="feature1" placeholder="Hour" required="required" />
-                <input type="text" name="feature2" placeholder="Day" required="required" />
-                <input type="text" name="feature3" placeholder="weather" required="required" />
-                <input type="text" name="feature4" placeholder="Zone" required="required" />
 
-                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-            </form>
 
-            <br>
-            <br>
-            <p class="prediction">{{ prediction_text }}</p>
+    <section class="schsec">
+
+        <div class="schedule">
+
+            <div>
+                <h4 class="sst" >Train Schedules</h4>
+                <img style="height: 500px; width: 400px;" src="/static/images/1.jpg" alt="">
+            </div>
+
+
+            <div>
+                <h4 class="sst"> Bus Schedules </h4>
+                <img style="height: 500px; width: 400px;" src="/static/images/2.jpg" alt="">
+
+            </div>
+
 
         </div>
 
-        <a href="https://www.google.com/maps" target="_blank">
-            <div class="img-map" style="height: 300px; width: 400px;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17441.476161531526!2d77.42922077038396!3d23.220562747271263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43bb782fd9f1%3A0x6eea9be478f74999!2sRani%20Kamlapati%20Railway%20Station!5e0!3m2!1sen!2sin!4v1713508996366!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-           
-        </a>
-        
-        
 
     </section>
 

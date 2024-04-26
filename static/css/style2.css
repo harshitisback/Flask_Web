@@ -977,4 +977,51 @@ input {
 .footer_section p a {
   color: inherit;
 }
-/*# sourceMappingURL=style.css.map */
+
+
+/* for schedules tab  */
+
+
+
+.schsec {
+  background-color: #1B106C;
+  height: 1000px;
+}
+
+
+.schedule {
+  margin-top: 7%;
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.schtb {
+  text-align: center;
+  color: #000000;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.sst {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: white;
+}
+
+@media(max-width:576px) {
+  .schedule {
+    margin-top: 7%;
+    padding-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .schsec {
+    background-color: #1B106C;
+    height: 1500px;
+  }
+}
