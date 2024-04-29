@@ -47,6 +47,14 @@ def serve():
 def sch():
     return render_template('sched.html')
 
+@app.route('/table')
+def table():
+    return render_template('table.html')
+
+@app.route('/busTable')
+def busTable():
+    return render_template('busTable.html')
+
 
 
 @app.route('/predict', methods=['POST'])
